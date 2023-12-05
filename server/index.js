@@ -3,6 +3,7 @@ const mongoose=require("mongoose");
 const multer=require('multer');
 const nodemailer=require('nodemailer');
 const Mailgen=require('mailgen');
+const cors=require('cors');
 const {Email,Password}=require('./env.js')
 
 const app=express();
