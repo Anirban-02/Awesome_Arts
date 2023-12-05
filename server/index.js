@@ -18,7 +18,7 @@ app.use(cors(
     }
 ));
 mongoose.connect("mongodb+srv://tataighosh104:Anipubg07@cluster0.ysntczx.mongodb.net/Artpage?retryWrites=true&w=majority").then(()=>console.log("Connected to Database"))
-.catch((err)=>console.log(err));
+.catch((err)=>console.log("Database Not Connected"));
 
 const storage=multer.diskStorage({
     destination: function(req,file,cb){
