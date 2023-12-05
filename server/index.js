@@ -11,7 +11,7 @@ const {orderConfirmMail}=require('./appController.js');
 app.use(express.json());
 app.use(cors(
     {
-        origin:[https://awesome-arts-app.vercel.app],
+        origin:["https://awesome-arts-app.vercel.app"],
         methods:["POST","GET"],
         credentials:true
     }
