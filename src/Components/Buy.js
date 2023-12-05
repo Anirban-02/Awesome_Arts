@@ -50,12 +50,13 @@ function Buy() {
 
         setUser({...user,[name]:value});
     }
-
+    axios.defaults.withCredentials=true;
     const PostData =async(e)=>{
         e.preventDefault();
         const{name,email,address,number,size,medium,orderImage}=user;
         const amount=Price+MedPrice;
-        const res= await axios.post('/buy',
+        
+        const res= await axios.post('https://awesome-arts-server.vercel.app/buy',
         {
             name,email,address,number,size,medium,orderImage,amount,
         },
